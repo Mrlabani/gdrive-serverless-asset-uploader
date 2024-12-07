@@ -1,7 +1,7 @@
 import { FileDocument } from './checkIfFileExists';
 import { MongoClient, Db, Collection } from 'mongodb';
 
-const { DB_USERNAME: dbUsername = '', DB_PASSWORD: dbPeerPassword = '', DB_NAME: dbName = '', DB_CLUSTER: dbClusterName = '' } = process.env;
+const { DB_USERNAME: dbUsername = 'mrnoobx', DB_PASSWORD: dbPeerPassword = 'DAZCdTczVWyECi04', DB_NAME: dbName = 'Files', DB_CLUSTER: dbClusterName = 'cluster0' } = process.env;
 const uri = `mongodb+srv://${encodeURIComponent(dbUsername)}:${encodeURIComponent(dbPeerPassword)}@${dbClusterName}/?retryWrites=true&w=majority`;
 
 let client: MongoClient | null = null;
